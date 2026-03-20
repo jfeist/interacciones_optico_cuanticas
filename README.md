@@ -1,6 +1,6 @@
 # Hands-on Notebooks
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfeist/zcam_school_binder/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfeist/interacciones_optico_cuanticas/HEAD)
 
 This repository is configured to run in three ways from a single dependency source:
 
