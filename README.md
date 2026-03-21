@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfeist/interacciones_optico_cuanticas/HEAD)
 
-These notebooks can be run in three different ways. Choose whichever suits you best.
+These notebooks can be run in three different ways. I recommend option 2 or 3.
 
 ## Option 1 — Binder (easiest, no account needed)
 
