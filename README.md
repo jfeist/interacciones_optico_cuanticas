@@ -2,52 +2,31 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfeist/interacciones_optico_cuanticas/HEAD)
 
-This repository is configured to run in three ways from a single dependency source:
+These notebooks can be run in three different ways. Choose whichever suits you best.
 
-1. Binder
-2. GitHub Codespaces + VS Code notebooks
-3. Local machine with `uv`
+## Option 1 — Binder (easiest, no account needed)
 
-All Python packages are defined in `pyproject.toml`.
+Click the **Launch Binder** badge above. A computing environment will be built in the cloud and JupyterLab will open in your browser. Nothing needs to be installed on your computer.
 
-## 1) Binder
+**Pros:** No account, no setup, works from any browser.  
+**Cons:** Takes a minute or two to start. The session shuts down automatically after about 10 minutes of inactivity, and any changes you make (edited notebooks, saved results) are lost when it does — the environment is completely temporary.
 
-Binder uses:
+## Option 2 — GitHub Codespaces (persistent, GitHub account required)
 
-- `pyproject.toml` for Python package installation (`pip install -e .` via repo2docker)
-- `runtime.txt` for Python version
+Go to the repository page on GitHub and click **Code → Codespaces → Create codespace on main**. VS Code will open in your browser with everything already installed.
 
-You can launch with the Binder badge above.
+**Pros:** Your work is saved between sessions. Feels like a proper editor (VS Code). Reasonably fast to start once the environment has been built.  
+**Cons:** Requires a free GitHub account. GitHub's free tier includes 60 hours/month of Codespace usage, which should be plenty for this course.
 
-## 2) GitHub Codespaces
+## Option 3 — Your own computer (most control, some setup required)
 
-The repository includes `.devcontainer/devcontainer.json`.
-When a Codespace starts, it will:
+If you want to run the notebooks on your own machine, you need to install [uv](https://docs.astral.sh/uv/getting-started/installation/), a Python package manager. Then, from a terminal in the folder where you downloaded this repository, run:
 
-1. Install `uv`
-2. Create/update `.venv`
-3. Sync dependencies from `pyproject.toml`
-
-Then open any notebook in VS Code and select the `.venv` kernel if prompted.
-
-## 3) Local machine with uv
-
-From the repository root:
-
-```bash
+```
 uv run jupyter lab
 ```
 
-This will automatically create/manage the environment and install project dependencies.
+This will download all required packages automatically on the first run and then open JupyterLab in your browser.
 
-If you want to pre-sync once (optional):
-
-```bash
-uv sync
-```
-
-Then run again:
-
-```bash
-uv run jupyter lab
-```
+**Pros:** Works offline. Full control over your environment. Changes are saved locally.  
+**Cons:** Requires installing software and using a terminal. Initial package download can take a few minutes.
