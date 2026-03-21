@@ -28,5 +28,13 @@ uv run jupyter lab
 
 This will download all required packages automatically on the first run and then open JupyterLab in your browser.
 
+If you prefer opening the notebooks in VS Code, run:
+
+```
+uv sync
+```
+
+Then select the environment created by `uv` as your notebook kernel in VS Code.
+
 **Pros:** Works offline. Full control over your environment. Changes are saved locally.  
 **Cons:** Requires installing software and using a terminal. Initial package download can take a few minutes.
