@@ -6,12 +6,7 @@
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter"
-      ],
-      "settings": {
-        "python.defaultInterpreterPath": "./.venv/bin/python",
-        "python.terminal.activateEnvironment": true,
-        "python.terminal.activateEnvInCurrentTerminal": true
-      }
+      ]
     }
   },
   "waitFor": "onCreateCommand",
