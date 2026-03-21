@@ -7,7 +7,7 @@ name = "hands-on-notebooks"
 version = "0.1.0"
 description = "University class hands-on notebooks"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13,<3.14"
 dependencies = [
   "ipykernel>=6.29.5",
   "ipympl>=0.9.7",
