@@ -1,4 +1,4 @@
-# Hands-on Notebooks
+# Interacciones Óptico-Cuánticas: Hands-on Notebooks
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jfeist/interacciones_optico_cuanticas/HEAD)
 
